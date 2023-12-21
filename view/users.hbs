@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+     <link rel="stylesheet" href='css/users.css'>
+</head>
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+   
+ <div class="social">
+        <button><a href="/login">Deconnexion</a></button>
+    </div>
+    <h3>Users</h3>
+    <table>
+        <tr>
+            <td>email</td>
+            <td>Mot de Passe</td>
+        </tr>
+                    {{#each users}}
+        <tr>
+            <td>{{this.name}}</td>
+                <td> {{this.password}}</td>
+        </tr>
+                {{/each}}
+
+    </table>
+
+
+   
+    
+</body>
+</html>
